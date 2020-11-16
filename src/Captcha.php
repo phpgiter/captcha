@@ -512,7 +512,7 @@ class Captcha
      */
     public function src(string $config = 'default'): string
     {
-        return url('captcha/' . $config) . '?' . $this->str->random(8);
+        return url('member/captcha/' . $config) . '?' . $this->str->random(8);
     }
 
     /**
